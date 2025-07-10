@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Nama Cowo & Nama Cewe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images/ataskiri.png" alt="Dekorasi Atas Kiri" class="animated-decoration top-left">
+    <img src="images/ataskanan.png" alt="Dekorasi Atas Kanan" class="animated-decoration top-right">
+    <img src="images/tengahkiri.png" alt="Dekorasi Tengah Kiri" class="animated-decoration middle-left">
+    <img src="images/tengahkanan.png" alt="Dekorasi Tengah Kanan" class="animated-decoration middle-right">
+    <img src="images/bawahkiri.png" alt="Dekorasi Bawah Kiri" class="animated-decoration bottom-left">
+    <img src="images/bawahkanan.png" alt="Dekorasi Bawah Kanan" class="animated-decoration bottom-right">
+
+    <audio id="background-music" loop>
+        <source src="music/Lagu Pernikahan Kita.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <button id="music-toggle" aria-label="Toggle music">
+        <i class="fas fa-pause"></i>
+    </button>
+
+    <div id="page1" class="page active" style="background-image: url('images/bg2.png');">
+        <h1 class="main-title">
+            <span class="wedding-of-text animate-on-load">The Wedding Of</span>
+            <span class="groom-name-text animate-on-load">Nama Cowok</span>
+            <span class="and-symbol-text animate-on-load">&</span>
+            <span class="bride-name-text animate-on-load">Nama Cewek</span>
+        </h1>
+        <p class="guest-info animate-on-load">Kepada Yth. Bapak/Ibu/Sdr(i)</p>
+        <p class="guest-name animate-on-load" id="guestNameDisplay">Tamu Undangan</p>
+        <button id="open-invitation-btn" class="animate-on-load">Buka Undangan <i class="fas fa-envelope-open"></i></button>
+    </div>
+
+    <div id="page2" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Ayat Suci Al-Qur'an</h2>
+        <p class="animate-on-load">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."</p>
+        <p class="animate-on-load">(QS. Ar-Rum: 21)</p>
+    </div>
+
+    <div id="page3" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Mempelai</h2>
+        <div class="groom-section animate-on-load">
+            <div class="profile-card">
+                <img src="images/cowo.jpeg" alt="Nama Cowo" class="profile-pic animate-on-load">
+                <h3>Nama Cowo</h3>
+                <p>Putra dari Bapak [Nama Ayah Pria] & Ibu [Nama Ibu Pria]</p>
+            </div>
+        </div>
+        <p class="and-symbol animate-on-load">&</p>
+        <div class="bride-section animate-on-load">
+            <div class="profile-card">
+                <img src="images/cewe.jpeg" alt="Nama Cewe" class="profile-pic animate-on-load">
+                <h3>Nama Cewe</h3>
+                <p>Putri dari Bapak [Nama Ayah Wanita] & Ibu [Nama Ibu Wanita]</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Detail Pernikahan</h2>
+        <div class="event-details animate-on-load">
+            <h3>Akad Nikah</h3>
+            <p>
+                Sabtu, 10 Agustus 2025<br>
+                Pukul 09:00 WIB<br>
+                [Alamat Lengkap Akad Nikah], [Kota]
+            </p>
+        </div>
+        <div class="event-details animate-on-load">
+            <h3>Resepsi Pernikahan</h3>
+            <p>
+                Sabtu, 10 Agustus 2025<br>
+                Pukul 11:00 - Selesai WIB<br>
+                [Alamat Lengkap Resepsi], [Kota]
+            </p>
+        </div>
+        <p class="animate-on-load">Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.</p>
+    </div>
+
+    <div id="page5" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Lokasi Acara</h2>
+        <p class="animate-on-load">Silakan gunakan peta di bawah ini untuk membantu Anda mencapai lokasi acara.</p>
+        <div class="map-container animate-on-load">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.574673646739!2d106.829141!3d-6.175110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2b70d4c6d%3A0x6b2e3e2c3c4e5a6b!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a href="https://maps.app.goo.gl/3zfJRSTrQ45FxGys8" target="_blank" class="direction-btn animate-on-load">Buka di Google Maps <i class="fas fa-map-marked-alt"></i></a>
+    </div>
+
+    <div id="page6" class="page"style="background-image: url('images/bg1.png');">
+        <section class="countdown-section">
+            <h2>Hitung Mundur Menuju Hari Bahagia</h2>
+            <div id="countdown" class="countdown-timer">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Hari</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Jam</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Menit</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Detik</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rsvp-section animate-on-load">
+            <h2>Konfirmasi Kehadiran</h2>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="guestNameRsvp">Nama Anda:</label>
+                    <input type="text" id="guestNameRsvp" required>
+                </div>
+                <div class="form-group">
+                    <label for="attendance">Konfirmasi Kehadiran:</label>
+                    <select id="attendance" required>
+                        <option value="">Pilih...</option>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak-hadir">Tidak Hadir</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan/Ucapan:</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Konfirmasi</button>
+            </form>
+
+            <div class="greetings-display">
+                <h3>Ucapan & Doa</h3>
+                <div id="greetingsList" class="greetings-list">
+                    <p>Belum ada ucapan. Jadilah yang pertama!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="page7" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Galeri Momen</h2>
+        <div class="gallery-grid">
+            <img src="images/pasangan1.jpeg" alt="Gallery 1" class="animate-on-load">
+            <img src="images/pasangan2.jpeg" alt="Gallery 2" class="animate-on-load">
+            <img src="images/pasangan1.jpeg" alt="Gallery 3" class="animate-on-load">
+            <img src="images/pasangan2.jpeg" alt="Gallery 4" class="animate-on-load">
+            <img src="images/pasangan1.jpeg" alt="Gallery 5" class="animate-on-load">
+            <img src="images/pasangan2.jpeg" alt="Gallery 6" class="animate-on-load">
+        </div>
+    </div>
+
+    <div id="page8" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Kirim Hadiah</h2>
+        <p class="animate-on-load">Doa restu Anda adalah karunia terindah bagi kami. Namun, jika Anda ingin memberikan hadiah, Anda bisa mengirimkannya ke rekening berikut:</p>
+        <div class="bank-info animate-on-load">
+            <h3>Bank [Nama Bank]</h3>
+            <p>Atas Nama: [Nama Pemilik Rekening]</p>
+            <p id="accountNumberZee">No. Rekening: [Nomor Rekening]</p>
+            <button onclick="copyToClipboard('accountNumberZee')">Salin Nomor Rekening <i class="far fa-copy"></i></button>
+        </div>
+        <div class="bank-info animate-on-load">
+            <h3>Bank [Nama Bank]</h3>
+            <p>Atas Nama: [Nama Pemilik Rekening]</p>
+            <p id="accountNumberJunin">No. Rekening: [Nomor Rekening]</p>
+            <button onclick="copyToClipboard('accountNumberJunin')">Salin Nomor Rekening <i class="far fa-copy"></i></button>
+        </div>
+    </div>
+
+    <div id="page9" class="page" style="background-image: url('images/bg1.png');">
+        <h2 class="animate-on-load">Terima Kasih</h2>
+        <p class="animate-on-load">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
+        <p class="wedding-of animate-on-load">Kami yang berbahagia,</p>
+        <h1 class="names animate-on-load">Nama Cowo & Nama Cewe</h1>
+        
+        <div class="sponsor-section animate-on-load">
+            <p class="sponsor-tagline">Dibuat sepenuh hati</p>
+            <p class="sponsor-made-by">Porwered by Ninifty</p>
+            
+            <a href="https://instagram.com/ninifty" target="_blank" rel="noopener noreferrer" class="sponsor-logo-link">
+                <img src="images/ninifty.png" alt="Logo Sponsor" class="sponsor-logo">
+            </a>
+            
+            <p class="sponsor-social-link">
+                <a href="https://instagram.com/ninifty" target="_blank" rel="noopener noreferrer">Ninifty Media Sosial</a>
+            </p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <button class="nav-button" data-target="page1"><i class="fas fa-home"></i><br>Home</button>
+        <button class="nav-button" data-target="page2"><i class="fas fa-quran"></i><br>Ayat</button>
+        <button class="nav-button" data-target="page3"><i class="fas fa-users"></i><br>Pasangan</button>
+        <button class="nav-button" data-target="page4"><i class="fas fa-calendar-alt"></i><br>Acara</button>
+        <button class="nav-button" data-target="page5"><i class="fas fa-map-marker-alt"></i><br>Lokasi</button>
+        <button class="nav-button" data-target="page6"><i class="fas fa-clock"></i><br>Hitung Mundur</button>
+        <button class="nav-button" data-target="page7"><i class="fas fa-images"></i><br>Galeri</button>
+        <button class="nav-button" data-target="page8"><i class="fas fa-gift"></i><br>Hadiah</button>
+        <button class="nav-button" data-target="page9"><i class="fas fa-heart"></i><br>Penutup</button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
